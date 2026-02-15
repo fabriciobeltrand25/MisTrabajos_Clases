@@ -14,9 +14,7 @@ import java.io.IOException;
 public class DivisionCuentas extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
+  
     public DivisionCuentas() {
         super();
     }
