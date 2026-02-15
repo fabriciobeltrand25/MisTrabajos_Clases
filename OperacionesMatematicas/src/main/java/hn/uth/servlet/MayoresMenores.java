@@ -25,12 +25,12 @@ public class MayoresMenores extends HttpServlet {
 
         if ("POST".equalsIgnoreCase(metodo)) {
         	
-            // Recibimos los 3 números para los incisos a y b
+           
             int n1 = Integer.parseInt(request.getParameter("n1"));
             int n2 = Integer.parseInt(request.getParameter("n2"));
             int n3 = Integer.parseInt(request.getParameter("n3"));
 
-         // Lógica C: Encontrar el valor que más se repite (la moda)
+        
             String listaStr = request.getParameter("listaNumeros");
             String[] partes = listaStr.split(",");
             Map<Integer, Integer> frecuencias = new HashMap<>();
@@ -40,7 +40,7 @@ public class MayoresMenores extends HttpServlet {
             for (String s : partes) {
                 try {
                     int num = Integer.parseInt(s.trim());
-                    // Contamos las veces que aparece cada número
+                    // CAMBIOS AVER QUE HAY
                     int cuenta = frecuencias.getOrDefault(num, 0) + 1;
                     frecuencias.put(num, cuenta);
 
